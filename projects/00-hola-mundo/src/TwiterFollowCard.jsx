@@ -41,7 +41,8 @@ export function TwiterFollowCard({ children, formattedUserName, userName, name, 
 					className={buttonClassName}
 					onClick={handleClick}
 				>
-					{textisFollowing}
+					<span className='tw-followCard-text'>{textisFollowing}</span>
+					<span className='tw-followCard-stopFollow'>Dejar de Seguir</span>
 				</button>
 			</aside>
 		</article>
