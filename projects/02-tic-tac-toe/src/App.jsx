@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import confetti from 'canvas-confetti'
 import { TURNS } from './constants.js'
-import { checkWinner, checkEndGame } from './logic/board.js'
+import { checkWinner, checkEndGame, saveGameStorage, resetGameStorage } from './logic/board.js'
 import { WinnerModal } from './components/WinnerModal.jsx'
 import { Board } from './components/Board.jsx'
 import { Turn } from './components/Turn.jsx'
@@ -30,8 +30,7 @@ function App() {
 		setBoard(newBoard)
 
 		//Guardamos en local Storage
-		window.localStorage.setItem('board', JSON.stringify(newBoard))
-		window.localStorage.setItem('turn', newTurn)
+		saveGameStorage({ board: newBoard, turn: newTurn })
 
 		//Revisamos si Hay Ganador o el juego termino
 		const newWinner = checkWinner(newBoard)
@@ -47,6 +46,7 @@ function App() {
 		setTurn(TURNS.X)
 		setBoard(Array(9).fill(null))
 		setWinner(null)
+		resetGameStorage()
 	}
 
 	return (
