@@ -1,20 +1,26 @@
 {
-  "name": "curso-reac",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alecs14314/curso-reac.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alecs14314/curso-reac/issues"
-  },
-  "homepage": "https://github.com/alecs14314/curso-reac#readme"
+	"name": "curso-reac",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alecs14314/curso-reac.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/alecs14314/curso-reac/issues"
+	},
+	"homepage": "https://github.com/alecs14314/curso-reac#readme",
+	"devDependencies": {
+		"standard": "^17.0.0"
+	},
+	"eslintConfig": {
+		"extends": "./node_modules/standard/eslintrc.json"
+	}
 }
