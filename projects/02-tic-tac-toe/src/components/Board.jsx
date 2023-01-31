@@ -1,4 +1,4 @@
-import { Square } from './Scuare'
+import { Square } from './Square'
 export function Board({ board, updateBoard }) {
 	return board.map((_, index) => {
 		return (

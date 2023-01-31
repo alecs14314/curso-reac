@@ -1,5 +1,5 @@
 import { TURNS } from '../constants'
-import { Square } from './Scuare'
+import { Square } from './Square'
 export function Turn({ turn }) {
 	return (
 		<section className='turn'>
