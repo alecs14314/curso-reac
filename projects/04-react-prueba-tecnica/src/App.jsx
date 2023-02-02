@@ -1,24 +1,33 @@
 import { useEffect, useState } from 'react'
+import { getRandomFact } from './logic/util'
+import './App.css'
+import { ImageCat } from './components/ImageCat'
+
+function useCatFact () {
+  const [fact, setFact] = useState()
+
+  const refreshFact = () => {
+    getRandomFact().then((newFact) => {
+      setFact(newFact)
+    })
+  }
+  useEffect(refreshFact, [])
+  return { fact, refreshFact }
+}
 
 export function App () {
-  const [fact, setFact] = useState('lorem ipsum cat fact .......')
+  const { fact, refreshFact } = useCatFact()
 
-  const getCatFact = async () => {
-    const data = await fetch('https://catfact.ninja/fact')
-      .then(response => response.json())
-    console.log(data)
+  const handledClick = async () => {
+    refreshFact()
   }
 
-  useEffect(() => {
-    getCatFact()
-  }
-  , [fact]
-  )
   return (
-
-    <>
+    <main>
       <h1> APP de Gatitos</h1>
-      <p>{fact}</p>
-    </>
+      <button onClick={handledClick}>Actualizar</button>
+      {fact && <p>{fact}</p>}
+      <ImageCat catFact={fact} />
+    </main>
   )
 }
