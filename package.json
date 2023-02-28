@@ -6,6 +6,9 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
+	"workspaces": [
+		"projects/*"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/alecs14314/curso-reac.git"
@@ -21,6 +24,6 @@
 		"standard": "^17.0.0"
 	},
 	"eslintConfig": {
-		"extends": "./node_modules/standard/eslintrc.json" 
+		"extends": "./node_modules/standard/eslintrc.json"
 	}
 }

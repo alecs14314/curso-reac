@@ -14,6 +14,7 @@ export function useSearch () {
       return
     }
     if (search.length <= 3) {
+      console.log('3 caracteres')
       setError('Ingrese almenos 3 caracteres para realizar la busqueda')
       return
     }
