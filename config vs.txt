@@ -1,0 +1,95 @@
+{
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "javascript",
+    "javascriptreact"
+  ],
+  "breadcrumbs.enabled": false,
+  "dashboard.projectData": null,
+  "editor.accessibilitySupport": "off",
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.codeLensFontFamily": "Victor Mono",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'Dank Mono','Cascadia Code PL', 'JetBrains Mono', monospace",
+  "editor.fontLigatures": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.codeActionsOnSave": [
+    "source.fixAll.eslint"
+  ],
+  "errorLens.enabled": true,
+  "errorLens.messageBackgroundMode": "line",
+  "eslint.alwaysShowStatus": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+  "emmet.excludeLanguages": [
+    "markdown",
+    "php"
+  ],
+  "explorer.confirmDelete": true,
+  "git.autofetch": true,
+  "javascript.format.enable": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "less.format.enable": false,
+  "markdown.validate.enabled": true,
+  "oneDarkPro.bold": true,
+  "oneDarkPro.editorTheme": "One Dark Pro Darker",
+  "oneDarkPro.vivid": true,
+  "php.executablePath": "/usr/local/Cellar/php@7.4/7.4.33/bin/php",
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
+  "scss.format.enable": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "tabnine.experimentalAutoImports": true,
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontFamily": "monospace",
+  "typescript.format.enable": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
+  "workbench.preferredHighContrastColorTheme": "One Dark Pro Darker",
+  "workbench.preferredHighContrastLightColorTheme": "One Dark Pro Darker",
+  "workbench.preferredLightColorTheme": "One Dark Pro Darker",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.commandPalette.experimental.suggestCommands": true,
+  "workbench.sideBar.location": "right",
+  "zenMode.hideStatusBar": false,
+  "search.defaultViewMode": "tree",
+  "search.showLineNumbers": true,
+  "editor.formatOnSave": false,
+  "CodeGPT.query.language": "Spanish",
+  "workbench.iconTheme": "material-icon-theme",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true
+}
